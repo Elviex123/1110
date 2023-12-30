@@ -5,7 +5,7 @@
 4.副函式
 """
 
-class library:
+class Library:
     def __init__(self,library_book,library_id,book_author,book_company,library_date,borrow,borrow_date,due_date,book_location,borrow_name,borrow_id,borrow_email):
         self.library_book = library_book
         self.library_id = library_id
@@ -20,51 +20,27 @@ class library:
         self.borrow_id = borrow_id
         self.borrow_email = borrow_email
 
+    def print_library_info(self):
+        print(f"書名: {self.library_book}")
+        print(f"書ID: {self.library_id}")
+        print(f"作者: {self.book_author}")
+        print(f"出版社: {self.book_author}")
+        print(f"出版日期: {self.library_date}")
+        print(f"是否借出: {self.borrow}")
+        print(f"借出日期: {self.borrow_date}")
+        print(f"還書期限: {self.due_date}")
+        print(f"館藏位置: {self.book_location}")
+        print(f"借書人姓名: {self.borrow_name}")
+        print(f"學號: {self.borrow_id}")
+        print(f"email: {self.borrow_email}")
 
+        def get_library_book(self):
+                return self.library_book
+            
+        def get_book_company(self):
+                return self.book_company
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-
-def print_course_info(self):
-    print(f"書名: {self.library_book}")
-    print(f"書ID: {self.library_id}")
-    print(f"作者: {self.book_author}")
-    print(f"出版社: {self.book_company}")
-    print(f"出版日期: {self.library_date}")
-    print(f"是否借出: {self.borrow}")
-    print(f"借出日期: {self.borrow_date}")
-    print(f"還書期限: {self.due_date}")
-    print(f"館藏位置: {self.book_location}")
-    print(f"借書人姓名: {self.borrow_name}")
-    print(f"學號: {self.borrow_id}")
-    print(f"email: {self.borrow_email}")
-
-    l1=library('bookname','12345','作者')
-    print("書名=",l1_library_book)
-
-"""
+        l1=Library(library_book="書本",library_id="123",book_author="作者名",book_author="公司",library_date="0705")
     
 
-
-
-
-
-
-    
-
-
-   
+        l1.print_library_info()
